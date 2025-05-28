@@ -1,0 +1,77 @@
+PyTorch version: 2.6.0+cpu
+Is debug build: False
+CUDA used to build PyTorch: None
+ROCM used to build PyTorch: N/A
+
+OS: Майкрософт Windows 10 Pro (10.0.19045 64-разрядная)
+GCC version: Could not collect
+Clang version: Could not collect
+CMake version: Could not collect
+Libc version: N/A
+
+Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)] (64-bit runtime)
+Python platform: Windows-10-10.0.19045-SP0
+Is CUDA available: False
+CUDA runtime version: No CUDA
+CUDA_MODULE_LOADING set to: N/A
+GPU models and configuration: No CUDA
+Nvidia driver version: No CUDA
+cuDNN version: No CUDA
+HIP runtime version: N/A
+MIOpen runtime version: N/A
+Is XNNPACK available: True
+
+CPU:
+Name: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+Manufacturer: GenuineIntel
+Family: 205
+Architecture: 9
+ProcessorType: 3
+DeviceID: CPU0
+CurrentClockSpeed: 1600
+MaxClockSpeed: 1800
+L2CacheSize: 1024
+L2CacheSpeed: None
+Revision: None
+
+Versions of relevant libraries:
+[pip3] numpy==1.22.0
+[pip3] torch==2.6.0
+[pip3] torch-ema==0.3
+[pip3] torchaudio==2.6.0
+[pip3] torchvision==0.21.0
+[conda] blas                      1.0                         mkl
+[conda] cuda-cudart               12.8.57                       0    nvidia
+[conda] cuda-cudart-dev           12.8.57                       0    nvidia
+[conda] cuda-cudart-dev_win-64    12.8.57                       0    nvidia
+[conda] cuda-cudart-static        12.8.57                       0    nvidia
+[conda] cuda-cudart-static_win-64 12.8.57                       0    nvidia
+[conda] cuda-cudart_win-64        12.8.57                       0    nvidia
+[conda] cuda-cupti                12.8.57                       0    nvidia
+[conda] cuda-cupti-dev            12.8.57                       0    nvidia
+[conda] cuda-libraries            12.8.0                        0    nvidia
+[conda] cuda-libraries-dev        12.8.0                        0    nvidia
+[conda] cuda-nvrtc                12.8.61                       0    nvidia
+[conda] cuda-nvrtc-dev            12.8.61                       0    nvidia
+[conda] cuda-opencl               12.8.55                       0    nvidia
+[conda] cuda-opencl-dev           12.8.55                       0    nvidia
+[conda] cuda-runtime              12.8.0                        0    nvidia
+[conda] libcublas                 12.8.3.14                     0    nvidia
+[conda] libcublas-dev             12.8.3.14                     0    nvidia
+[conda] libcufft                  11.3.3.41                     0    nvidia
+[conda] libcufft-dev              11.3.3.41                     0    nvidia
+[conda] libcurand                 10.3.9.55                     0    nvidia
+[conda] libcurand-dev             10.3.9.55                     0    nvidia
+[conda] libcusolver               11.7.2.55                     0    nvidia
+[conda] libcusolver-dev           11.7.2.55                     0    nvidia
+[conda] libcusparse               12.5.7.53                     0    nvidia
+[conda] libcusparse-dev           12.5.7.53                     0    nvidia
+[conda] libnvjitlink              12.8.61                       1    nvidia
+[conda] libnvjitlink-dev          12.8.61                       1    nvidia
+[conda] mkl                       2023.1.0         h6b88ed4_46358
+[conda] mkl-service               2.4.0           py311h2bbff1b_1
+[conda] mkl_fft                   1.3.10          py311h827c3e9_0
+[conda] mkl_random                1.2.7           py311hea22821_0
+[conda] numpy                     1.26.4          py311hdab7c0b_0
+[conda] numpy-base                1.26.4          py311hd01c5d8_0
+[conda] numpydoc                  1.7.0           py311haa95532_0

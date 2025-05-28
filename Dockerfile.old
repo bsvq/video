@@ -1,0 +1,24 @@
+FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
+LABEL maintainer="snrdrgn"
+EXPOSE 8089
+RUN mkdir /home/person
+ADD requirements.txt /home/person
+RUN apt-get update
+RUN apt-get install -y git
+RUN apt-get install -y bash
+RUN apt-get install -y python3.11
+RUN apt-get install -y python3-pip
+RUN pip install -r /home/person/requirements.txt
+RUN pip install --no-cache-dir -U openmim 
+RUN mim install mmengine 
+RUN mim install "mmcv>=2.0.1" 
+RUN mim install "mmdet>=3.1.0" 
+RUN mim install "mmpose>=1.1.0" 
+RUN apt-get install -y libglib2.0-0 libsm6 libxrender1 libxext6
+RUN apt-get install libgl1 -y && apt-get install curl -y
+ADD ffmpeg /home/person/ffmpeg
+ENV FFMPEG_PATH=/home/person/ffmpeg/bin
+RUN chmod +x -R /home/person/ffmpeg
+ADD musetalk /bin/musetalk
+WORKDIR /bin/musetalk/
+CMD python3 app_http_triton.py

@@ -1,0 +1,21 @@
+FROM ubuntu:22.04
+RUN apt update
+RUN mkdir ./nerfstream
+COPY venv ./nerfstream/
+
+RUN apt-get install python3.10 python3.10-venv python3-pip -y
+RUN python3 --version
+RUN pip --version
+RUN python3 -m venv ./nerfstream/venv
+RUN source ./nerfstream/venv/bin/activate
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+COPY . ./nerfstream
+WORKDIR ./nerfstream
+
+EXPOSE 10000-10200/udp
+EXPOSE 8089:8010
+CMD ["python3", "app.py"]
+
+
